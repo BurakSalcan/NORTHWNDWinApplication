@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F551F9A-9896-4437-A08D-EB7A253A5D74}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NORTHWNDWinApplication</RootNamespace>
+    <AssemblyName>NORTHWNDWinApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisFormu.Designer.cs">
+      <DependentUpon>GirisFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\LoginUser.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Northwind İcerikleri\Kisi İşlemleri\Calisanlar\PersonelBolgeleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Kisi İşlemleri\Calisanlar\PersonelBolgeleri.Designer.cs">
+      <DependentUpon>PersonelBolgeleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Kisi İşlemleri\Calisanlar\Personeller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Kisi İşlemleri\Calisanlar\Personeller.Designer.cs">
+      <DependentUpon>Personeller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Kisi İşlemleri\Musteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Kisi İşlemleri\Musteriler.Designer.cs">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Kisi İşlemleri\Tedarikciler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Kisi İşlemleri\Tedarikciler.Designer.cs">
+      <DependentUpon>Tedarikciler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Nakliye İslemleri\Bolgeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Nakliye İslemleri\Bolgeler.Designer.cs">
+      <DependentUpon>Bolgeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Urun İslemleri\Kategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Urun İslemleri\Kategori.Designer.cs">
+      <DependentUpon>Kategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Urun İslemleri\KategoriCB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Urun İslemleri\KategoriCB.Designer.cs">
+      <DependentUpon>KategoriCB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Nakliye İslemleri\Nakliye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Nakliye İslemleri\Nakliye.Designer.cs">
+      <DependentUpon>Nakliye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Urun İslemleri\Satis İslemleri\Satislar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Urun İslemleri\Satis İslemleri\Satislar.Designer.cs">
+      <DependentUpon>Satislar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Urun İslemleri\Satis İslemleri\SiparisDetaylari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Urun İslemleri\Satis İslemleri\SiparisDetaylari.Designer.cs">
+      <DependentUpon>SiparisDetaylari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Urun İslemleri\Urun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Northwind İcerikleri\Urun İslemleri\Urun.Designer.cs">
+      <DependentUpon>Urun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisFormu.resx">
+      <DependentUpon>GirisFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Northwind İcerikleri\Kisi İşlemleri\Calisanlar\PersonelBolgeleri.resx">
+      <DependentUpon>PersonelBolgeleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Northwind İcerikleri\Kisi İşlemleri\Calisanlar\Personeller.resx">
+      <DependentUpon>Personeller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Northwind İcerikleri\Kisi İşlemleri\Musteriler.resx">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Northwind İcerikleri\Kisi İşlemleri\Tedarikciler.resx">
+      <DependentUpon>Tedarikciler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Northwind İcerikleri\Nakliye İslemleri\Bolgeler.resx">
+      <DependentUpon>Bolgeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Northwind İcerikleri\Nakliye İslemleri\Nakliye.resx">
+      <DependentUpon>Nakliye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Northwind İcerikleri\Urun İslemleri\Kategori.resx">
+      <DependentUpon>Kategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Northwind İcerikleri\Urun İslemleri\KategoriCB.resx">
+      <DependentUpon>KategoriCB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Northwind İcerikleri\Urun İslemleri\Satis İslemleri\Satislar.resx">
+      <DependentUpon>Satislar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Northwind İcerikleri\Urun İslemleri\Satis İslemleri\SiparisDetaylari.resx">
+      <DependentUpon>SiparisDetaylari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Northwind İcerikleri\Urun İslemleri\Urun.resx">
+      <DependentUpon>Urun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resimler\Ürünler.jpg" />
+    <Content Include="Resources\Ürünler.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
